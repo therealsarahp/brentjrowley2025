@@ -13,10 +13,10 @@ export default function NavBar() {
 
     return(
         <div className={styles.navContainer}>
-            <Link className={`${pathname === paths.index ? styles.hideLogo : styles.navLogo}`}
+            <Link className={styles.navLogo}
                 href={paths.index}>
                <h1>
-                   BJR
+                   {pathname === paths.index ? <br/> : "BJR"}
                </h1>
             </Link>
             <div className={styles.navWrapper}>

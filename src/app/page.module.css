@@ -31,6 +31,13 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /*scroll-behavior: smooth;*/
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  border: 1px solid red;
 }
 
 .main ol {
@@ -56,7 +63,15 @@
 }
 
 .artistName {
-  width: 100%;
+  /*width: 100%;*/
+  /*height: 90vh;*/
+  margin: auto;
+  font-size: 15vw;
+
+  /*scroll-behavior: smooth;*/
+  /*overflow: scroll;*/
+  /*scroll-snap-type: y mandatory;*/
+
 }
 
 .artistName h1{
@@ -86,6 +101,35 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
+}
+
+.fullScreenImageContainer {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  /*scroll-behavior: smooth;*/
+  /*overflow: auto;*/
+  /*scroll-snap-type: y mandatory;*/
+  border: 1px solid var(--color-gray-100);
+  /*position: sticky;*/
+}
+
+.fullScreenImage{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*gap: 50px;*/
+  background-size:  cover;
+  scroll-snap-align: start;
+  border: 1px dashed var(--color-gray-100);
+
+}
+
+.fullScreenImage img{
+  height: 100vh;
+  width: 100%;
 }
 
 

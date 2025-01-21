@@ -25,13 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-    <body className={`${anton.variable} ${spaceGrotesk.variable}`}>
-    <header>
-      <NavBar/>
-    </header>
-        {children}
+      <html lang="en">
+
+      <body className={`${anton.variable} ${spaceGrotesk.variable}`}>
+
+      <header>
+        <NavBar/>
+      </header>
+      {children}
       </body>
-    </html>
-  );
+      </html>
+  )
 }
