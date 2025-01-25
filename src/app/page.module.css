@@ -37,7 +37,7 @@
   /*scroll-behavior: smooth;*/
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .main ol {
@@ -108,9 +108,8 @@
   width: 100%;
   scroll-snap-align: start;
   /*scroll-behavior: smooth;*/
-  /*overflow: auto;*/
+  /*overflow: hidden;*/
   /*scroll-snap-type: y mandatory;*/
-  border: 1px solid var(--color-gray-100);
   /*position: sticky;*/
 }
 
@@ -123,7 +122,6 @@
   /*gap: 50px;*/
   background-size:  cover;
   scroll-snap-align: start;
-  border: 1px dashed var(--color-gray-100);
 
 }
 
