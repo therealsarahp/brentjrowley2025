@@ -1,14 +1,20 @@
+import styles from './gallery.module.css';
+import SeriesTiles from "@/components/SeriesTiles";
+
 export default function Gallery(){
     return(
-        <div>
-            <main>
-                <section>
-
-                </section>
+        <div className={styles.page}>
+            <main className={styles.main}>
                 <section>
                     <h1>
-                        This will be the gallery page.
+                        Current Series
                     </h1>
+                </section>
+                <section className={styles.seriesTilesContainer}>
+                    <SeriesTiles></SeriesTiles>
+                    <SeriesTiles/>
+                    <SeriesTiles/>
+                    <SeriesTiles/>
                 </section>
             </main>
 
