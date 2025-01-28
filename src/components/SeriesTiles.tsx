@@ -8,21 +8,27 @@ interface SeriesTilesInterface {
 
 export default function SeriesTiles(props: SeriesTilesInterface) {
     return(
-        <div className={styles.tile}>
-            <Image src={Daphne}
-                   alt={"daphne"}
-                   responsive={"true"}
-                   objectFit={"contain"}
-                   layout={"responsive"}
-                   className={styles.image}
-                   />
-            <div>
-                <h1 className={styles.title}>
-                    Daphne
-                </h1>
-            </div>
+        // <div className={styles.tile}>
+            <li className={styles.tile}>
+                <a href="" className={styles.title}>
+                    <span className={styles.titleText}>Title</span>
+                    <Image src={Daphne}
+                           alt={"daphne"}
+                           responsive={"true"}
+                           // objectFit={"contain"}
+                           // layout={"responsive"}
+                           className={styles.image}
+                    />
+                </a>
+            </li>
 
-        </div>
+        //     <div>
+        //         <h1 className={styles.title}>
+        //             Daphne
+        //         </h1>
+        //     </div>
+        //
+        // </div>
 
     )
 }
