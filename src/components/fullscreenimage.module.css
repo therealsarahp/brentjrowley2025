@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.fullscreen-element {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.fullscreen {
+    background-color: #f0f0f0;
+}
+
+/* Style for when the element is in fullscreen mode */
+:fullscreen {
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+.scrollImages{
+    height: 80vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.scrollImagesOverlay{
+    /*border: 5px solid var(--lightPrimary);*/
+    opacity: 1;
+    position: absolute;
+    bottom: 10vh;
+    width: calc(700vmax/9 - 20vw);
+    height: calc( 80vh/4);
+    z-index: 45;
+    background: rgba(76, 175, 80, 0.3);
+    color: var(--lightPrimary);
+}
+
+.scrollImagesOverlay .active{
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.title {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.description {
+    opacity: 1;
+}
