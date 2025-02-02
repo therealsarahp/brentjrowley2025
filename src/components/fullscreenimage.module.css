@@ -25,10 +25,9 @@
 
 @media only screen and (min-width: 0rem) {
     .scrollImages {
-        height: 80vh;
-        width: auto;
-        max-width: 100%;
-        object-fit: cover;
+       height: auto;
+        width: 90vw;
+        object-fit: fill;
     }
 
     .scrollImagesOverlay {
@@ -36,7 +35,7 @@
         /*opacity: 1;*/
         position: absolute;
         bottom: 10vh;
-        width: calc(1200vmax / 11 );
+        width: calc(500vmax / 11 );
         height: calc(80vh / 4);
         z-index: 45;
         background: rgba(0, 0, 0, .5);
@@ -46,8 +45,16 @@
     }
 }
 @media only screen and (min-width: 43.5rem) {
+    .scrollImages {
+        height: 80vh;
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
     .scrollImagesOverlay {
         width: calc(700vmax / 9 - 20vw );
+
     }
 }
 

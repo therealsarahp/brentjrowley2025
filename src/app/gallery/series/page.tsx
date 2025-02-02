@@ -46,47 +46,6 @@ export default function SeriesPage(){
                                 <FullScreenImage/>
                                 <FullScreenImage/>
                                 <FullScreenImage/>
-                                {/*<div >*/}
-                                {/*{isOverlay &&*/}
-                                {/*    <div className={styles.scrollImagesOverlay}>*/}
-                                {/*        <h3>Painting Title</h3>*/}
-                                {/*        <p>Painting description lorem ipsum dolor sit amet, consectetur adipiscing elit,*/}
-                                {/*            sed do eiusmod tempor*/}
-                                {/*            incididunt ut labore et dolore magna aliqua.</p>*/}
-                                {/*    </div>}*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       onClick={toggleOverlay}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}*/}
-                                {/*/>*/}
-
-                                {/*</div>*/}
-
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
-                                {/*<Image src={leaveBlood}*/}
-                                {/*       // onClick={toggleFullscreen}*/}
-                                {/*       alt=""*/}
-                                {/*       className={styles.scrollImages}/>*/}
                             </div>
                         </div>
                     </section>
