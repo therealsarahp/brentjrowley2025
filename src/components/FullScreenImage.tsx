@@ -9,11 +9,9 @@ export default function FullScreenImage() {
     const toggleOverlay = (e) =>{
         if(!isOverlay){
             setIsOverlay(true);
-            document.getElementById("scrollImagesOverlay").className += "active";
         }
         if(isOverlay){
             setIsOverlay(false);
-            document.getElementById("scrollImagesOverlay").className -= "active";
         }
     }
 
@@ -25,7 +23,7 @@ export default function FullScreenImage() {
                    className={[styles.scrollImages, "animate"].join(" ")}
             />
             {isOverlay &&
-                <div className={[styles.scrollImagesOverlay, "animate"].join(" ")}>
+                <div className={[styles.scrollImagesOverlay, "animate", `${isOverlay ? 'active' : null}`].join(" ")}>
                     <h3 className={styles.title}>Painting Title</h3>
                     <p className={styles.description}>Painting description lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor

@@ -2,7 +2,7 @@
     .tile {
         max-width: 100%;
         position: relative;
-        border: 1px red solid;
+        margin: 10vh 0;
 
     }
 

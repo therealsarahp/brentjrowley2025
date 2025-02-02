@@ -33,9 +33,9 @@ export default function SeriesPage(){
                     <section id={styles.sectionPin}>
                     <div className={styles.pinWrapSticky}>
                             <div className={styles.pinWrap}>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</h2>
-                                {/*<FullScreenImage/>*/}
+                                {/*<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor*/}
+                                {/*    incididunt ut labore et dolore magna aliqua.</h2>*/}
+                                <FullScreenImage/>
                                 <FullScreenImage/>
                                 <FullScreenImage/>
                                 <FullScreenImage/>
