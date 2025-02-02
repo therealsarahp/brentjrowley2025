@@ -13,10 +13,52 @@
         /*width: auto;*/
     }
 
+    .title {
+        text-decoration: none;
+        /* changes at tablet */
+        height: 60vw;
+        max-height: 21.75rem;
+        /*border: 1px red solid;*/
+        padding: 2.5rem 1.5rem;
+        /* prevents padding from affecting height and width */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleText {
+        /*border: 2px purple solid;*/
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        /* 12px - 20px top & bottom, 16px - 24px sides*/
+        padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1rem, 3vw, 1.5rem);
+        color: var(--lightPrimary);
+        /*position: absolute;*/
+        /*bottom: 50%;*/
+        transition: .5s ease;
+        /*opacity:0;*/
+        /*z-index: 2;*/
+    }
+}
+
+@media (hover){
+    .title:hover .titleText{
+        opacity: 1;
+        transform: scale(1.5);
+        z-index: 45;
+    }
     .title:hover .image {
         transform: scale(1.5);
     }
+}
 
+@media only screen and (min-width: 43.5rem) {
     .title {
         text-decoration: none;
         /* changes at tablet */
@@ -44,13 +86,7 @@
         position: absolute;
         bottom: 50%;
         transition: .5s ease;
-        opacity:0;
+        opacity: 0;
         /*z-index: 2;*/
-    }
-
-    .title:hover .titleText{
-        opacity: 1;
-        transform: scale(1.5);
-        z-index: 45;
     }
 }
