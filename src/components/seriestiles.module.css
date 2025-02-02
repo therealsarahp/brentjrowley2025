@@ -30,8 +30,10 @@
 
     .titleText {
         /*border: 2px purple solid;*/
-        font-size: 1.25rem;
-        font-weight: 700;
+        font-family: var(--font-anton);
+        font-size: 1.5rem;
+        letter-spacing: .05rem;
+        /*font-weight: 700;*/
         line-height: 1.2em;
         text-align: center;
         text-decoration: none;
@@ -54,7 +56,7 @@
         z-index: 45;
     }
     .title:hover .image {
-        transform: scale(1.5);
+        transform: scale(1.15);
     }
 }
 
@@ -74,8 +76,8 @@
     }
 
     .titleText {
-        font-size: 1.25rem;
-        font-weight: 700;
+        font-size: 3.5rem;
+        /*font-weight: 700;*/
         line-height: 1.2em;
         text-align: center;
         text-decoration: none;
