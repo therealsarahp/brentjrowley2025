@@ -6,12 +6,142 @@
     --button-primary-hover: #383838;
     --button-secondary-hover: #f2f2f2;
 
-    display: grid;
-    grid-template-rows: 20px 1fr 20px;
+    /*display: grid;*/
+    /*grid-template-rows: 20px 1fr 20px;*/
     align-items: center;
     justify-items: left;
     min-height: 100svh;
-    padding: 80px;
+    /*padding: 80px;*/
     gap: 64px;
     font-family: var(--font-grotesk);
 }
+
+@media only screen and (min-width: 0rem){
+    .main {
+        display: block;
+    }
+
+    .sideHeader{
+        padding-top: 20vw;
+        /*height: 100vh;*/
+        width: 100vw;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        /*align-items: center;*/
+        position: sticky;
+    }
+
+    .sideHeader h1{
+        font-size: 3rem;
+        text-align: center;
+        align-content: end;
+    }
+
+    .aboutList{
+        background-color: var(--button-primary-hover);
+        display: inline-flex;
+    }
+
+    .aboutList ul{
+        list-style-type: none;
+        display: inline-flex;
+    }
+    .aboutList li{
+        padding: 1rem;
+        /*padding-right: 1rem;*/
+        /*padding-left: 1rem;*/
+    }
+
+    .right{
+        border: 1px solid gray;
+        display: block;
+        padding-top: 10vw;
+        /*padding-right: */
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .right p{
+        line-height: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+    .right h3 {
+        font-size: 1.6rem;
+    }
+
+    .artistPhoto{
+
+    }
+
+    .artistStatement{
+
+    }
+
+    .artistBio{
+
+    }
+}
+
+@media only screen and (min-width: 43.5rem){
+    .main {
+        display: grid;
+        grid-template-columns: 200px calc(100vw - 200px);
+    }
+
+    .sideHeader{
+        padding: 0;
+        height: 100vh;
+        width: auto;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        /*align-items: center;*/
+        position: sticky;
+    }
+
+    .sideHeader h1{
+        font-size: 3rem;
+        text-align: center;
+        align-content: end;
+    }
+
+    .aboutList{
+        display: block;
+        background-color: var(--darkPrimary);
+    }
+
+    .aboutList ul{
+        list-style-type: none;
+        display: block;
+    }
+    .aboutList li{
+        padding: 0;
+    }
+
+    .right{
+        border: 1px solid gray;
+        display: block;
+        padding-top: 10vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+
+    .right p{
+        line-height: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .artistPhoto{
+
+    }
+
+    .artistStatement{
+
+    }
+
+    .artistBio{
+
+    }
+}
+
+

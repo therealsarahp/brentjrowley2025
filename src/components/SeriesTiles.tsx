@@ -10,7 +10,7 @@ export default function SeriesTiles(props: SeriesTilesInterface) {
     return(
         // <div className={styles.tile}>
             <li className={styles.tile}>
-                <a href="" className={styles.title}>
+                <a href="/gallery/series" className={styles.title}>
                     <span className={styles.titleText}>Title</span>
                     <Image src={Daphne}
                            alt={"daphne"}
