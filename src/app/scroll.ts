@@ -7,7 +7,7 @@ export function useScroll(){
     useEffect(()=>{
       if(typeof window !== 'undefined'){
           window.addEventListener('scroll', () => {
-              document.documentElement.style.setProperty('--scroll', ( window.pageYOffset - offsetStart ) / ( document.body.offsetHeight - offsetStart - offsetEnd - window.innerHeight ));
+              document.documentElement.style.setProperty('--scroll', String(( window.pageYOffset - offsetStart ) / ( document.body.offsetHeight - offsetStart - offsetEnd - window.innerHeight )));
           }, false);
 
           const observer = new IntersectionObserver((entries) => {
