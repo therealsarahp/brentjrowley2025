@@ -21,7 +21,7 @@ export interface SeriesObj{
 }
 
 export type PaintingObj={
-    img: string;
+    img: string | StaticImport;
     size: string;
     price: string;
     series: string;
@@ -49,7 +49,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Melancholia.jpg',
+                img: Melancholia,
             },
             {
                 title: "Hauntologically Frozen II",
@@ -62,7 +62,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "Pontormo two nudes brain eating",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Hauntologically Frozen II.jpg',
+                img: HauntII,
             },
             {
                 title: "The Yellow Christ (Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny)",
@@ -75,7 +75,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/The Yellow Christ (Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny).jpg',
+                img: Yellow,
             },
             {
                 title: "The Trouble With Tragedy Is the Fuss It Makes",
@@ -88,7 +88,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/The Trouble With Tragedy Is the Fuss It Makes.jpg',
+                img: Trouble,
             },
             {
                 title: "Again Gone With What To Tell On Again Retell",
@@ -101,7 +101,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Again Gone.jpg',
+                img: Again,
             },
             {
                 title: "Hauntologically Frozen I",
@@ -114,7 +114,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "Close up woman’s face (yellow outline) with line-drawn figures",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Hauntologically Frozen I.jpg',
+                img: HauntI,
             },
             {
                 title: "Only Evil Can Speak of Itself Now",
@@ -127,7 +127,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "",
                 buyer: "",
-                img: "@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Only Evil.jpg",
+                img: Only,
             },
             {
                 title: "The Triumph of Death (Echolalia)",
@@ -140,7 +140,7 @@ export const burrowingsSeries: SeriesObj={
                 card: true,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/The Triumph of Death (Echolalia).jpg',
+                img: Triumph,
             },
             {
                 title: "Fenestration",
@@ -168,7 +168,7 @@ export const burrowingsSeries: SeriesObj={
                 card: false,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Fenestration.jpg',
+                img: Fenestration,
             },
             {
                 title: "Saint Sebastian",
@@ -181,7 +181,7 @@ export const burrowingsSeries: SeriesObj={
                 card: false,
                 description: "",
                 buyer: "",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/Saint Sebastian.jpg',
+                img: Saint,
             },
             {
                 title: "This Droning of the Surf I",
@@ -194,7 +194,7 @@ export const burrowingsSeries: SeriesObj={
                 card: false,
                 description: "",
                 buyer: "Tim",
-                img: '@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/This Droning of the Surf I.jpg',
+                img: SurfI,
             },
             {
                 title: "This Droning of the Surf II",
@@ -207,7 +207,7 @@ export const burrowingsSeries: SeriesObj={
                 card: false,
                 description: "",
                 buyer: "Tim",
-                img: "@/public/images/Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny/This Droning of the Surf III.jpg",
+                img: SurfIII,
         }
 ]
 }
