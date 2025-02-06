@@ -12,7 +12,7 @@ export function useScroll(){
 
           const observer = new IntersectionObserver((entries) => {
               entries.forEach(entry => {
-                  if(entry.isIntersecting) {
+                  if(entry.isIntersecting && entry.target && entry.target.getAttribute('data-animate')){
                       // console.log("adding animate", entry)
                       const cls = entry.target.getAttribute('data-animate');
                       entry.target.classList.add(cls);

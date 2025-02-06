@@ -23,7 +23,7 @@ export default function FullScreenImage({image}) {
                    className={[styles.scrollImages, "animate"].join(" ")}
             />
             {isOverlay &&
-                <div className={[styles.scrollImagesOverlay, "animate", `${isOverlay ? 'active' : null}`].join(" ")}>
+                <div className={[styles.scrollImagesOverlay, `${isOverlay ? 'active' : null}`].join(" ")}>
                     <h3 className={styles.title}>{image.title}</h3>
                     {/*<p className={styles.description}>{image.writing}</p>*/}
                 </div>}
