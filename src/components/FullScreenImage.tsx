@@ -1,9 +1,8 @@
 import styles from './fullscreenimage.module.css'
 import {useState} from "react";
 import Image from "next/image";
-import {PaintingObj} from "@/data/series/Burrowings";
 
-export default function FullScreenImage({image ,key}:PaintingObj) {
+export default function FullScreenImage({image}) {
     const [isOverlay, setIsOverlay] = useState(false);
 
     console.log(image);
@@ -16,7 +15,7 @@ export default function FullScreenImage({image ,key}:PaintingObj) {
         }
     }
 
-    return (<div key={key}>
+    return (<div>
             <Image src={image.img}
                    onClick={toggleOverlay}
                    alt=""
@@ -26,7 +25,7 @@ export default function FullScreenImage({image ,key}:PaintingObj) {
             {isOverlay &&
                 <div className={[styles.scrollImagesOverlay, "animate", `${isOverlay ? 'active' : null}`].join(" ")}>
                     <h3 className={styles.title}>{image.title}</h3>
-                    <p className={styles.description}>{image.writing}</p>
+                    {/*<p className={styles.description}>{image.writing}</p>*/}
                 </div>}
         </div>
 

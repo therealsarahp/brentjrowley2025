@@ -17,7 +17,7 @@
         /*border: 5px solid var(--lightPrimary);*/
         /*opacity: 1;*/
         position: absolute;
-        bottom: 10vh;
+        top: 10vh;
         width: calc(500vmax / 11 );
         height: calc(80vh / 4);
         z-index: 45;
@@ -48,6 +48,7 @@
     .title {
         opacity: 1;
         font-weight: bold;
+        font-size: 4rem;
     }
 
     .description {

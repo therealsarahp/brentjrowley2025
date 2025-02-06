@@ -12,7 +12,6 @@ interface SeriesTilesInterface {
 };
 
 export default function SeriesTiles(props: SeriesObj) {
-   console.log("props inside SeriesTiles", props, props.images);
     return(
         // <div className={styles.tile}>
             <li className={styles.tile}>
