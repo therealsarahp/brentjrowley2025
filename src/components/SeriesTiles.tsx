@@ -10,8 +10,8 @@ export default function SeriesTiles(props: SeriesObj) {
                 <a href={`/gallery/${props.url}`} className={styles.title}>
                     <span className={styles.titleText}>{props.title}</span>
                     <Image src={props.images[0].img}
-                           alt={"daphne"}
-                           responsive={"true"}
+                           alt={""}
+                           // responsive={"true"}
                            // objectFit={"contain"}
                            // layout={"responsive"}
                            className={styles.image}

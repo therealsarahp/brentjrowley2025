@@ -12,14 +12,14 @@ export function useScroll(){
 
           const observer = new IntersectionObserver((entries) => {
               entries.forEach(entry => {
-                  if(entry.isIntersecting && entry.target && entry.target.getAttribute('data-animate')){
+                  if(entry.isIntersecting){
                       // console.log("adding animate", entry)
-                      const cls = entry.target.getAttribute('data-animate');
-                      entry.target.classList.add(cls);
+                      const cls = entry.target && entry.target.getAttribute('data-animate') ? entry.target.getAttribute('data-animate') : "";
+                      entry.target.classList.add(cls ? cls : "");
                       entry.target.classList.remove('remove-animate');
                   } else{
                       const cls = entry.target.getAttribute('data-animate');
-                      entry.target.classList.remove(cls)
+                      entry.target.classList.remove(cls ? cls : "")
                       entry.target.classList.add('remove-animate');
                   }
               })

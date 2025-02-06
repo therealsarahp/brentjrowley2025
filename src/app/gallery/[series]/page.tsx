@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './series.module.css';
-import FullScreenImage from "@/components/FullScreenImage";
+import {FullScreenImage} from "@/components/FullScreenImage";
 import {useParams} from "next/navigation";
 import {series} from "@/data/series";
 

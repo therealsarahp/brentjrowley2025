@@ -1,8 +1,14 @@
 import styles from './fullscreenimage.module.css'
-import {useState} from "react";
+import {useState, FC, JSX} from "react";
 import Image from "next/image";
+import {PaintingObj} from "@/data/series/Burrowings";
 
-export default function FullScreenImage({image}) {
+interface FullScreenImageProps {
+    image: PaintingObj;
+}
+
+
+export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
     const [isOverlay, setIsOverlay] = useState(false);
 
     console.log(image);

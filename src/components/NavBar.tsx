@@ -42,7 +42,7 @@ export default function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <Link className={`${pathname === paths.blog ? styles.linkActive : null}`}
+                        <Link className={`${pathname === paths.blog.index ? styles.linkActive : null}`}
                               href={paths.blog.index}>
                             Blog
                         </Link>
