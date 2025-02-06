@@ -2,7 +2,6 @@
 import styles from "./page.module.css";
 import { useScroll } from "./scroll";
 
-
 export default function Home() {
     useScroll();
   return (

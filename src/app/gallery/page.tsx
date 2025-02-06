@@ -1,6 +1,8 @@
 import styles from './gallery.module.css';
 import SeriesTiles from "@/components/SeriesTiles";
 import HorizontalScrollSection from "@/components/HorizontalScrollSection";
+import {series} from "@/data/series";
+import {SeriesObj} from "@/data/series/Burrowings";
 
 export default function Gallery(){
     return(
@@ -13,11 +15,15 @@ export default function Gallery(){
                 {/*</section>*/}
                 <section className={styles.seriesTilesContainer}>
                             <ul className={styles.tileGroup}>
-
-                                <SeriesTiles></SeriesTiles>
-                                <SeriesTiles/>
-                                <SeriesTiles/>
-                                <SeriesTiles/>
+                                {series && series[0]
+                                    ? <SeriesTiles title={series[0].title} description={series[0].description} images={series[0].images}/>
+                                    : <h2> WTF</h2>
+                                }
+                                {/*{series && series.forEach((item:SeriesObj)=>{*/}
+                                {/*   return(*/}
+                                {/*       <SeriesTiles title={item.title} description={item.description} images={item.images}/>*/}
+                                {/*   )*/}
+                                {/*})}*/}
 
                             </ul>
                 </section>
