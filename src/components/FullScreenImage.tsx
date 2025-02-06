@@ -1,11 +1,12 @@
 import styles from './fullscreenimage.module.css'
 import {useState} from "react";
 import Image from "next/image";
-import leaveBlood from "../../public/images/leave-blood.jpg";
+import {PaintingObj} from "@/data/series/Burrowings";
 
-export default function FullScreenImage() {
+export default function FullScreenImage({image ,key}:PaintingObj) {
     const [isOverlay, setIsOverlay] = useState(false);
 
+    console.log(image);
     const toggleOverlay = (e) =>{
         if(!isOverlay){
             setIsOverlay(true);
@@ -15,8 +16,8 @@ export default function FullScreenImage() {
         }
     }
 
-    return (<div>
-            <Image src={leaveBlood}
+    return (<div key={key}>
+            <Image src={image.img}
                    onClick={toggleOverlay}
                    alt=""
                    data-animate={"slideRight"}
@@ -24,10 +25,8 @@ export default function FullScreenImage() {
             />
             {isOverlay &&
                 <div className={[styles.scrollImagesOverlay, "animate", `${isOverlay ? 'active' : null}`].join(" ")}>
-                    <h3 className={styles.title}>Painting Title</h3>
-                    <p className={styles.description}>Painting description lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
+                    <h3 className={styles.title}>{image.title}</h3>
+                    <p className={styles.description}>{image.writing}</p>
                 </div>}
         </div>
 
