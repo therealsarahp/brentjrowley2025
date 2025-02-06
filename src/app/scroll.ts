@@ -1,8 +1,8 @@
 import {useEffect} from "react";
 
 export function useScroll(){
-    var offsetStart = 0;
-    var offsetEnd = 0;
+    let offsetStart = 0;
+    let offsetEnd = 0;
 
     useEffect(()=>{
       if(typeof window !== 'undefined'){
@@ -14,11 +14,11 @@ export function useScroll(){
               entries.forEach(entry => {
                   if(entry.isIntersecting) {
                       // console.log("adding animate", entry)
-                      var cls = entry.target.getAttribute('data-animate');
+                      let cls = entry.target.getAttribute('data-animate');
                       entry.target.classList.add(cls);
                       entry.target.classList.remove('remove-animate');
                   } else{
-                      var cls = entry.target.getAttribute('data-animate');
+                      let cls = entry.target.getAttribute('data-animate');
                       entry.target.classList.remove(cls)
                       entry.target.classList.add('remove-animate');
                   }
@@ -40,6 +40,6 @@ export function useScroll(){
           console.log("This is intersecting", tags);
       }
 
-    }, [])
+    }, [offsetStart, offsetEnd])
 
 }

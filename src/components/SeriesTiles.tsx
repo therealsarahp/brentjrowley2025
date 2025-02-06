@@ -1,15 +1,7 @@
-import Image, {StaticImageData} from "next/image";
-import Daphne from "../../public/images/Daphne.jpg"
+import Image from "next/image";
 import styles from './seriestiles.module.css'
 import {SeriesObj} from "@/data/series/Burrowings";
 
-interface SeriesTilesInterface {
-    image: StaticImageData;
-    title: string;
-    description: string | null;
-    size: string | null;
-    media: string | null;
-};
 
 export default function SeriesTiles(props: SeriesObj) {
     return(

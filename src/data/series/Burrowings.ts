@@ -20,7 +20,7 @@ export interface SeriesObj{
 }
 
 export type PaintingObj={
-    img: {} | StaticImageData;
+    img: object | StaticImageData;
     size: string;
     price: string;
     series: string;

@@ -1,8 +1,6 @@
 import styles from './gallery.module.css';
 import SeriesTiles from "@/components/SeriesTiles";
-import HorizontalScrollSection from "@/components/HorizontalScrollSection";
 import {series} from "@/data/series";
-import {SeriesObj} from "@/data/series/Burrowings";
 
 export default function Gallery(){
     return(

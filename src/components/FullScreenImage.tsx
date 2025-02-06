@@ -6,7 +6,7 @@ export default function FullScreenImage({image}) {
     const [isOverlay, setIsOverlay] = useState(false);
 
     console.log(image);
-    const toggleOverlay = (e) =>{
+    const toggleOverlay = () =>{
         if(!isOverlay){
             setIsOverlay(true);
         }
