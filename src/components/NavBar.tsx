@@ -18,13 +18,12 @@ export default function NavBar() {
             <Link className={styles.navLogo}
                 href={paths.index}>
                <h1>
-                   {pathname === paths.index ? <br/>
-                       : <Image src={BJRicon}
+                    <Image src={BJRicon}
                                 alt={"Initials BJR for Brent J Rowley formed into a glyph"}
                                 style={{ fill: "var(--lightPrimary)",
                                     width: "3rem",
                                     height: "4rem",}}
-                       /> }
+                           />
                </h1>
             </Link>
             <div className={styles.navWrapper}>
