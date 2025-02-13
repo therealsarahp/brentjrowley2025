@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2rem 0;
+    /*padding: 2rem 0;*/
     z-index: 1000;
 }
 
@@ -21,7 +21,7 @@
     /*width: 40%;*/
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    padding: 0;
+    padding: 1.5rem;
 }
 
 .hideLogo {
