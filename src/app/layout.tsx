@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anton, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer";
 
 const anton = Anton({
   variable: "--font-anton",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <NavBar/>
       </header>
       {children}
+      <Footer/>
       </body>
       </html>
   )

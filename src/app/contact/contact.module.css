@@ -16,6 +16,14 @@
     font-family: var(--font-grotesk);
 }
 
+.main {
+    /*gap: 32px;*/
+    grid-row-start: 2;
+    position: relative;
+    /*height: 100vh;*/
+    width: 100%;
+}
+
 @media only screen and (min-width: 0rem){
     .main {
         display: block;
@@ -38,16 +46,16 @@
         align-content: end;
     }
 
-    .aboutList{
+    .contactList{
         background-color: var(--button-primary-hover);
         display: inline-flex;
     }
 
-    .aboutList ul{
+    .contactList ul{
         list-style-type: none;
         display: inline-flex;
     }
-    .aboutList li{
+    .contactList li{
         padding: 1rem;
         /*padding-right: 1rem;*/
         /*padding-left: 1rem;*/
@@ -70,30 +78,20 @@
         margin-bottom: 1rem;
     }
 
-    .artistPhotoContainer{
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    .artistPhoto{
-        height: 40vh;
-        width: auto;
-        /*object-fit: fill;*/
-        margin: auto;
-    }
-
-    .artistStatement{
+    .follow{
 
     }
 
-    .artistBio{
-
-    }
-
-    .artistBio a {
+    .socialLink:hover {
         text-decoration: underline;
-        font-size: 1.25rem;
     }
+
+    .newsletterForm{
+        height: 750px;
+        width: 100%;
+
+    }
+
 }
 
 @media only screen and (min-width: 43.5rem){
@@ -122,23 +120,16 @@
         align-items: center;
     }
 
-    .sideHeader h1{
-        font-size: 3rem;
-        text-align: center;
-        align-content: end;
-        /*position: fixed;*/
-    }
-
-    .aboutList{
+    .contactList{
         display: block;
         background-color: var(--darkPrimary);
     }
 
-    .aboutList ul{
+    .contactList ul{
         list-style-type: none;
         display: block;
     }
-    .aboutList li{
+    .contactList li{
         padding: 0;
     }
 
@@ -156,23 +147,4 @@
         padding-bottom: 1.5rem;
     }
 
-    .artistPhotoContainer{
-        width: 100%;
-        align-items: center;
-    }
-
-    .artistPhoto{
-       height: auto;
-        width: 40vw;
-    }
-
-    .artistStatement{
-
-    }
-
-    .artistBio{
-
-    }
 }
-
-

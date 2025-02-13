@@ -22,7 +22,6 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
-    border: 1px red solid;
 }
 
 .hideLogo {
@@ -39,7 +38,6 @@
     right: 0;
     top: 0;
     height: 100%;
-    border: 1px teal solid;
 }
 
 .navWrapper ul {

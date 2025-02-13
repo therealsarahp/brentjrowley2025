@@ -29,7 +29,7 @@ export default function NavBar() {
             <div className={styles.navWrapper}>
                 <ul>
                     <li>
-                        <Link className={`${pathname === paths.gallery ? styles.linkActive : null}`}
+                        <Link className={`${pathname.includes(paths.gallery) ? styles.linkActive : null}`}
                               href={paths.gallery}>
                             Gallery
                         </Link>
@@ -40,12 +40,12 @@ export default function NavBar() {
                             About
                         </Link>
                     </li>
-                    <li>
-                        <Link className={`${pathname === paths.blog.index ? styles.linkActive : null}`}
-                              href={paths.blog.index}>
-                            Blog
-                        </Link>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <Link className={`${pathname === paths.blog.index ? styles.linkActive : null}`}*/}
+                    {/*          href={paths.blog.index}>*/}
+                    {/*        Blog*/}
+                    {/*    </Link>*/}
+                    {/*</li>*/}
                     <li>
                         <Link className={`${pathname === paths.contact ? styles.linkActive : null}`}
                               href={paths.contact}>

@@ -1,5 +1,5 @@
 import {SeriesObj} from "@/data/series/Burrowings";
-// import Whither from '../../../public/images/diving-into/Whither Are They Vanish’d?.jpg';
+import Whither from '../../../public/images/diving-into/Whither Are They Vanishd.jpg';
 import Something from '../../../public/images/diving-into/Something More permanent.jpg';
 import Diving from '../../../public/images/diving-into/Diving Into the Wreck.jpg';
 import Duellum from '../../../public/images/diving-into/Duellum.jpg';
@@ -16,19 +16,19 @@ export const divingSeries : SeriesObj={
     description: "",
     url: "DivingIntoTheWreck",
     images: [
-        // {
-        //     title: "Whither Are They Vanish’d?",
-        //     size: "16 x 20`",
-        //     media: "Acrylic, alcohol ink, wax pastel, and oil on hardboard panel",
-        //     price: "$1800.00",
-        //     writing: "The earth hath bubbles, as the water has, And these are of them. Whither are they vanish'd? - Macbeth, Shakespeare",
-        //     series: "Diving Into the Wreck",
-        //     location: "Home, framed",
-        //     card: true,
-        //     description: null,
-        //     buyer: "",
-        //     img: Whither,
-        // },
+        {
+            title: "Whither Are They Vanish’d?",
+            size: "16 x 20`",
+            media: "Acrylic, alcohol ink, wax pastel, and oil on hardboard panel",
+            price: "$1800.00",
+            writing: "The earth hath bubbles, as the water has, And these are of them. Whither are they vanish'd? - Macbeth, Shakespeare",
+            series: "Diving Into the Wreck",
+            location: "Home, framed",
+            card: true,
+            description: null,
+            buyer: "",
+            img: Whither,
+        },
         {
             title: "Something More Permanent Than Fish or Weed",
             size: "24 in",
