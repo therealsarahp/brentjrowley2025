@@ -1,6 +1,11 @@
 import styles from './about.module.css'
 import Image from "next/image";
 import ArtistPhoto from '../../../public/images/artistPhoto.jpeg';
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "ABOUT",
+};
 
 export default function About(){
     return(

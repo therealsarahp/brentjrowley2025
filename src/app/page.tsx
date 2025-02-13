@@ -1,9 +1,11 @@
 'use client';
 import styles from "./page.module.css";
 import { useScroll } from "./scroll";
+import type {Metadata} from "next";
 
 export default function Home() {
     useScroll();
+
   return (
     <div className={styles.page}>
         <main className={styles.main}>

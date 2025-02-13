@@ -4,6 +4,11 @@ import styles from './series.module.css';
 import {FullScreenImage} from "@/components/FullScreenImage";
 import {useParams} from "next/navigation";
 import {series} from "@/data/series";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Series"
+}
 
 export default function SeriesPage(){
     // const [isOverlay, setIsOverlay] = useState(false);

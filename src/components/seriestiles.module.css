@@ -40,7 +40,7 @@
         width: 100%;
         /* 12px - 20px top & bottom, 16px - 24px sides*/
         padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1rem, 3vw, 1.5rem);
-        color: var(--lightPrimary);
+        /*color: var(--lightPrimary);*/
         /*position: absolute;*/
         /*bottom: 50%;*/
         transition: .5s ease;
@@ -84,7 +84,6 @@
         width: fit-content;
         /* 12px - 20px top & bottom, 16px - 24px sides*/
         padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1rem, 3vw, 1.5rem);
-        color: var(--lightPrimary);
         position: absolute;
         bottom: 25%;
         transition: .5s ease;

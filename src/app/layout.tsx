@@ -16,8 +16,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "BJR Art",
+    title: {
+        template: '%s | BJR Art',
+        default: 'BJR Art',
+    },
   description: "Art from Arkansas painter Brent J Rowley",
+    metadataBase: new URL('https://brentjrowley.com'),
 };
 
 export default function RootLayout({
@@ -27,11 +31,13 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en">
-
+      <head>
+          <link rel="icon" href="/favicon.ico" sizes="any"/>
+      </head>
       <body className={`${anton.variable} ${spaceGrotesk.variable}`}>
 
       <header>
-        <NavBar/>
+          <NavBar/>
       </header>
       {children}
       <Footer/>

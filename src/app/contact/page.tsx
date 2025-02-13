@@ -1,5 +1,10 @@
 import styles from './contact.module.css';
 import Link from "next/link";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "CONTACT",
+};
 
 export default function Contact(){
     return(

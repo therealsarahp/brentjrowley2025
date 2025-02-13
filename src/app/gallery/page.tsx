@@ -1,6 +1,11 @@
 import styles from './gallery.module.css';
 import SeriesTiles from "@/components/SeriesTiles";
 import {series} from "@/data/series";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "GALLERY",
+};
 
 export default function Gallery(){
     return(
