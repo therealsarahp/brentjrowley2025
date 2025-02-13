@@ -26,7 +26,7 @@ export type PaintingObj={
     price: string;
     series: string;
     writing: string;
-    description: string;
+    description: string | null;
     location: string;
     media: string;
     title: string;

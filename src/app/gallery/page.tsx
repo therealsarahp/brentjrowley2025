@@ -13,12 +13,13 @@ export default function Gallery(){
                 {/*</section>*/}
                 <section className={styles.seriesTilesContainer}>
                             <ul className={styles.tileGroup}>
-                                {series && series[0]
-                                    ? <SeriesTiles url={series[0].url}
-                                                    title={series[0].title}
-                                                    description={series[0].description}
-                                                    images={series[0].images}/>
-                                    : <h2> WTF</h2>
+                                {series && series.map((item, i) => {
+                                    return(<SeriesTiles key={i}
+                                                url={item.url}
+                                                 title={item.title}
+                                                 description={item.description}
+                                                 images={item.images}/>)
+                                })
                                 }
                                 {/*{series && series.forEach((item:SeriesObj)=>{*/}
                                 {/*   return(*/}
