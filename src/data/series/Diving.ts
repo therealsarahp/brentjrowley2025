@@ -63,7 +63,7 @@ export const divingSeries : SeriesObj={
             writing: "I came to explore the wreck.\nThe words are purposes.\nThe words are maps.\nI came to see the damage that was done\nand the treasures that prevail.\nI stroke the beam of my lamp\nslowly along the flank\nof something more permanent\nthan fish or weed\n\nthe thing I came for:\nthe wreck and not the story of the wreck\nthe thing itself and not the myth\nthe drowned face always staring\ntoward the sun\nthe evidence of damage\nworn by salt and sway into this threadbare beauty\nthe ribs of the disaster\ncurving their assertion\namong the tentative haunters.\n\n- Adrienne Rich",
             series: "Diving Into the Wreck",
             location: "Boswell Mourot",
-            card: "FALSE",
+            card: false,
             description: null,
             buyer: "",
             img: TheWreck,

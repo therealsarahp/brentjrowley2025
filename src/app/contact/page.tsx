@@ -49,7 +49,7 @@ export default function Contact(){
                             <iframe
                                 className={styles.newsletterForm}
                                 src="https://docs.google.com/forms/d/e/1FAIpQLSe75SbxV3kyjfwSWxegHkCZ7z0VxoIJ__9GDpKOqugZAMWXMQ/viewform?embedded=true"
-                                frameBorder="0" marginHeight="0" marginWidth="0">Loading…
+                                frameBorder={0} marginHeight={0} marginWidth={0}>Loading…
                             </iframe>
                         </div>
 
