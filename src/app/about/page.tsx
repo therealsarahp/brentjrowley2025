@@ -36,7 +36,7 @@ export default function About(){
                     <div className={styles.artistPhotoContainer}>
                         <Image src={ArtistPhoto}
                                className={styles.artistPhoto}
-                               alt={"Artist standing before his painting on a gallery wall."}
+                               alt={"Artist standing before his painting on a wall."}
                         />
                     </div>
                     <div className={styles.artistStatement}>

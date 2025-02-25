@@ -3,6 +3,7 @@ import { Anton, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/footer";
+import Header from "@/components/navigation/Header";
 
 const anton = Anton({
   variable: "--font-anton",

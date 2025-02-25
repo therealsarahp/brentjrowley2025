@@ -87,7 +87,7 @@
         position: absolute;
         bottom: 25%;
         transition: .5s ease;
-        opacity: 0;
+        /*opacity: 0;*/
         /*z-index: 2;*/
     }
 }

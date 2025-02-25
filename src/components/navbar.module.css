@@ -1,6 +1,6 @@
 
 .navContainer {
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: fixed;
     width: 100%;
     display: flex;
@@ -85,6 +85,47 @@
     text-decoration: underline;
 }
 
+.navWrapper p {
+    position: relative;
+    display: block;
+    margin: 1rem;
+    text-decoration: none;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1vw, 1rem);
+    line-height: 1.5em;
+}
+
+.dropdownContainer{
+    position: relative;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.dropdown{
+    position: absolute;
+    z-index: 30;
+    top: 100%;
+    min-height: 250px;
+    min-width: 250px;
+    height: 100%;
+    padding: 1.2rem;
+    overflow: scroll;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-gray-700)
+}
+
+.dropdown a{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.dropdown .hidden {
+    display: none;
+}
+
 
 a.primary {
     background: var(--foreground);
@@ -99,6 +140,12 @@ a.secondary {
 
 @media (hover: hover) and (pointer: fine) {
     .navWrapper li a:hover {
+        background: var(--color-gray-200);
+        color: var(--darkPrimary);
+        border-color: transparent;
+    }
+
+    .navWrapper p:hover {
         background: var(--color-gray-200);
         color: var(--darkPrimary);
         border-color: transparent;

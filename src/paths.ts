@@ -1,6 +1,6 @@
 export const paths = {
     index: '/',
-    gallery: "/gallery",
+    work: "/work",
     auth: {
         login: '/auth/login',
         register: '/auth/register',

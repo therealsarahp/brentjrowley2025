@@ -7,12 +7,28 @@ import styles from "./navbar.module.css";
 import { usePathname } from 'next/navigation';
 import BJRicon from '../../public/BJRicon.svg';
 import Image from "next/image";
+import React, {useState} from "react";
+import {series} from "@/data/series";
+import Dropdown from "@/components/navigation/Dropdown";
 
 
 export default function NavBar() {
 
     const pathname = usePathname();
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
+    const toggle = () => {
+        setIsOpen(old => !old);
+    }
+
+    const transClass = isOpen
+        ?
+        "flex"
+        :
+        "hidden";
+
+
+    console.log("isOpen", isOpen, "series", series);
     return(
         <div className={styles.navContainer}>
             <Link className={styles.navLogo}
@@ -29,10 +45,12 @@ export default function NavBar() {
             <div className={styles.navWrapper}>
                 <ul>
                     <li>
-                        <Link className={`${pathname.includes(paths.gallery) ? styles.linkActive : null}`}
-                              href={paths.gallery}>
-                            Gallery
-                        </Link>
+                        <Dropdown item={series}/>
+
+                        {/*<Link className={`${pathname.includes(paths.work) ? styles.linkActive : null}`}*/}
+                        {/*      href={paths.work}>*/}
+                        {/*    Work*/}
+                        {/*</Link>*/}
                     </li>
                     <li>
                         <Link className={`${pathname === paths.about ? styles.linkActive : null}`}
