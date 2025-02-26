@@ -1,5 +1,5 @@
 import styles from './fullscreenimage.module.css'
-import {useState, FC, JSX} from "react";
+import {useState, FC, JSX, useRef, useEffect} from "react";
 import Image from "next/image";
 import {PaintingObj} from "@/data/series/Burrowings";
 
@@ -10,8 +10,8 @@ interface FullScreenImageProps {
 
 export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
     const [isOverlay, setIsOverlay] = useState(false);
+    const overlayRef = useRef(null);
 
-    console.log(image);
     const toggleOverlay = () =>{
         if(!isOverlay){
             setIsOverlay(true);
@@ -21,18 +21,32 @@ export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
         }
     }
 
-    return (<div style={{ border: "1px solid red"}}>
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (overlayRef.current && !overlayRef.current.contains(event.target)) {
+                setIsOverlay(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [overlayRef]);
+
+    return (<div className={styles.container} ref={overlayRef}>
+            {isOverlay &&
+                <div className={[styles.scrollImagesOverlay, `${isOverlay ? 'active' : null}`].join(" ")}>
+                    <h3 className={styles.title}>{image.title}</h3>
+                    {/*<p className={styles.description}>{image?.writing | image?.description | null}</p>*/}
+                </div>}
             <Image src={image.img}
                    onClick={toggleOverlay}
                    alt=""
                    data-animate={"slideRight"}
                    className={[styles.scrollImages, "animate"].join(" ")}
             />
-            {isOverlay &&
-                <div className={[styles.scrollImagesOverlay, `${isOverlay ? 'active' : null}`].join(" ")}>
-                    <h3 className={styles.title}>{image.title}</h3>
-                    {/*<p className={styles.description}>{image.writing}</p>*/}
-                </div>}
+
         </div>
 
     );

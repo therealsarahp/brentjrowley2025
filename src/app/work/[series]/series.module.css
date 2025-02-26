@@ -60,6 +60,19 @@
         /*display: grid;*/
         /*grid-template-columns: 2fr 2fr;*/
     }
+
+    .container .pinWrap{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+        padding: 0 5vw;
+        margin: auto;
+        /*place-items: center;*/
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*flex-wrap: nowrap;*/
+        /*gap: 3rem;*/
+    }
 }
 
 @media only screen and (min-width: 43.5rem){
@@ -76,7 +89,7 @@
 
     .pinWrap {
         height: 100vh;
-        min-width: 700vmax;
+        min-width: 500vmax;
 
         /* Hook animation */
         will-change: transform;
@@ -86,6 +99,25 @@
         animation-timeline: --section-pin-tl;
         animation-range: contain 0% contain 100%;
     }
+
+    .container .pinWrap{
+        /*display: grid;*/
+        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+        /*grid-gap: 2rem;*/
+        /*padding: 50px 10vw;*/
+        /*margin: auto;*/
+        place-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3rem;
+    }
+
+    .container .pinWrap > * {
+        /*flex: 1; !* this is to make elements/columns in each row have equal width and fill up all available space in the row, similar to auto-fit in grid *!*/
+        /*flex-grow: 1; !*this can be used to make elements/columns in each row maintain their individual width but stretch to fill up all available space in the row*/
+    }
+
     .seriesDescription {
         margin-bottom: 1rem;
         position: absolute;
@@ -121,14 +153,6 @@
     position: relative;
 }
 
-.container .pinWrap{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    padding: 50px 10vw;
-    margin: auto;
-    place-items: center;
-}
 
 
 .container h1 span {

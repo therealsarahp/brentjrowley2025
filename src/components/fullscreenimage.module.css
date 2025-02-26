@@ -1,8 +1,9 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*min-height: 100vh;*/
+    position: relative;
 }
 
 
@@ -18,25 +19,34 @@
         /*opacity: 1;*/
         position: absolute;
         top: 10vh;
-        width: calc(500vmax / 11 );
-        height: calc(80vh / 4);
+        /*width: 50%;*/
+        height: 50%;
         z-index: 45;
         background: rgba(0, 0, 0, .5);
         color: var(--lightPrimary);
         transition: 2s ease;
+        align-items: center;
+        justify-content: center;
+        display: flex;
 
     }
+
+    .title{
+        font-size: 1rem;
+    }
+
 }
 @media only screen and (min-width: 43.5rem) {
     .scrollImages {
-        height: 80vh;
+        height: 90vh;
         width: auto;
         max-width: 100%;
         object-fit: contain;
     }
 
     .scrollImagesOverlay {
-        width: calc(700vmax / 9 - 20vw );
+        width: 100%;
+        /*position: fixed;*/
 
     }
 }
