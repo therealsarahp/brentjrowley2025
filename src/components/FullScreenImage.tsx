@@ -21,7 +21,7 @@ export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
         }
     }
 
-    return (<div>
+    return (<div style={{ border: "1px solid red"}}>
             <Image src={image.img}
                    onClick={toggleOverlay}
                    alt=""

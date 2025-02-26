@@ -7,7 +7,7 @@ export default function SeriesTiles(props: SeriesObj) {
     return(
         // <div className={styles.tile}>
             <li className={styles.tile}>
-                <a href={`/gallery/${props.url}`} className={styles.title}>
+                <a href={`/work/${props.url}`} className={styles.title}>
                     <span className={styles.titleText}>{props.title}</span>
                     <Image src={props.images[0].img}
                            alt={""}

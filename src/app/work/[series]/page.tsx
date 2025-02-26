@@ -44,7 +44,7 @@ export default function SeriesPage(){
                                     && seriesToUse.images
                                         .map((imageObj, i) => {
                                     // <FullScreenImage image={imageObj} />
-                                            return (<span key={i}><FullScreenImage image={imageObj} /></span>)
+                                            return (<span key={i} ><FullScreenImage image={imageObj} /></span>)
                                 })}
                             </div>
                         </div>

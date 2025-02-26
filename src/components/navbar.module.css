@@ -98,17 +98,18 @@
 .dropdownContainer{
     position: relative;
     height: 100%;
-    border: 1px solid red;
 }
 
 .dropdown{
     position: absolute;
     z-index: 30;
-    top: 100%;
+    top: 50%;
+    right: 0;
     min-height: 250px;
     min-width: 250px;
     height: 100%;
-    padding: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
     overflow: scroll;
     width: 100%;
     box-sizing: border-box;

@@ -76,7 +76,7 @@
 
     .pinWrap {
         height: 100vh;
-        width: 700vmax;
+        min-width: 700vmax;
 
         /* Hook animation */
         will-change: transform;
