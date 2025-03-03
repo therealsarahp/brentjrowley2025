@@ -1,5 +1,5 @@
 import styles from './fullscreenimage.module.css'
-import {useState, FC, JSX, useRef, useEffect} from "react";
+import {useState, FC, JSX, useRef, useEffect, RefObject} from "react";
 import Image from "next/image";
 import {PaintingObj} from "@/data/series/Burrowings";
 
@@ -10,7 +10,7 @@ interface FullScreenImageProps {
 
 export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
     const [isOverlay, setIsOverlay] = useState(false);
-    const overlayRef = useRef(null);
+    const overlayRef: RefObject<any> = useRef(null);
 
     const toggleOverlay = () =>{
         if(!isOverlay){
@@ -22,8 +22,8 @@ export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
     }
 
     useEffect(() => {
-        function handleClickOutside(event) {
-            if (overlayRef.current && !overlayRef.current.contains(event.target)) {
+        function handleClickOutside(event: MouseEvent) {
+            if (overlayRef && overlayRef.current && !overlayRef.current.contains(event.target)) {
                 setIsOverlay(false);
             }
         }
@@ -38,7 +38,7 @@ export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
             {isOverlay &&
                 <div className={[styles.scrollImagesOverlay, `${isOverlay ? 'active' : null}`].join(" ")}>
                     <h3 className={styles.title}>{image.title}</h3>
-                    {/*<p className={styles.description}>{image?.writing | image?.description | null}</p>*/}
+                    <h3 className={styles.description}>{image?.size}</h3>
                 </div>}
             <Image src={image.img}
                    onClick={toggleOverlay}

@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useEffect, useRef, useState} from 'react'
+import React, {RefObject, useEffect, useRef, useState} from 'react'
 import Link from 'next/link';
 
 import styles from "@/components/navbar.module.css";
@@ -15,7 +15,7 @@ interface DropdownProps {
 
 export default function Dropdown(props: DropdownProps) {
     const { item } = props;
-    const dropdownRef = useRef(null);
+    const dropdownRef: RefObject<any> = useRef(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     // const menuItems = item?.children ? item.children : [];
     const pathname = usePathname();
@@ -25,8 +25,8 @@ export default function Dropdown(props: DropdownProps) {
     }
 
     useEffect(() => {
-        function handleClickOutside(event) {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        function handleClickOutside(event: MouseEvent) {
+            if (dropdownRef && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
                 setIsOpen(false);
             }
         }

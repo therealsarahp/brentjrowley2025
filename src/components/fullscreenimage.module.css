@@ -14,6 +14,10 @@
         object-fit: fill;
     }
 
+    .title{
+        font-size: 2rem;
+    }
+
     .scrollImagesOverlay {
         /*border: 5px solid var(--lightPrimary);*/
         /*opacity: 1;*/
@@ -27,13 +31,11 @@
         transition: 2s ease;
         align-items: center;
         justify-content: center;
-        display: flex;
+        display: block;
 
     }
 
-    .title{
-        font-size: 1rem;
-    }
+
 
 }
 @media only screen and (min-width: 43.5rem) {
@@ -58,7 +60,7 @@
     .title {
         opacity: 1;
         font-weight: bold;
-        font-size: 4rem;
+        /*font-size: 4rem;*/
     }
 
     .description {
