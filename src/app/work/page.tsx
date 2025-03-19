@@ -20,10 +20,12 @@ export default function Work(){
                 <ul className={styles.tileGroup}>
                         {series && series.map((item, i) => {
                             return (<SeriesTiles key={i}
-                                                 url={item.url}
-                                                 title={item.title}
-                                                 description={item.description}
-                                                 images={item.images}/>)
+                                                 series={item}/>
+                                                 // url={item.url}
+                                                 // title={item.title}
+                                                 // description={item.description}
+                                                 // images={item.images} year={}/>
+                            )
                         })
                         }
                         {/*{series && series.forEach((item:SeriesObj)=>{*/}

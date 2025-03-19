@@ -2,14 +2,18 @@ import Image from "next/image";
 import styles from './seriestiles.module.css'
 import {SeriesObj} from "@/data/series/Burrowings";
 
-
-export default function SeriesTiles(props: SeriesObj) {
+interface SeriesTilesProps {
+    series: SeriesObj;
+    key: number;
+}
+export default function SeriesTiles(props: SeriesTilesProps) {
+   const {series, } = props;
     return(
         // <div className={styles.tile}>
             <li className={styles.tile}>
-                <a href={`/work/${props.url}`} className={styles.title}>
-                    <span className={styles.titleText}>{props.title}</span>
-                    <Image src={props.images[0].img}
+                <a href={`/work/${series.url}`} className={styles.title}>
+                    <span className={styles.titleText}>{series.title}</span>
+                    <Image src={series.images[0].img}
                            alt={""}
                            // responsive={"true"}
                            // objectFit={"contain"}

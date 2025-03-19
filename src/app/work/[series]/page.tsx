@@ -30,24 +30,28 @@ export default function SeriesPage(){
         <div className={styles.page}>
             <main className={styles.main}>
                 <div className={styles.container}>
-                    <section>
-                        <div className={styles.seriesDescription}>
-                            <h1>{seriesToUse && seriesToUse.title}</h1>
-                            <p>{seriesToUse && seriesToUse.description}</p>
-                        </div>
-                    </section>
+                    {/*<section>*/}
+                    {/*    <div className={styles.seriesDescription}>*/}
+                    {/*        <h1>{seriesToUse && seriesToUse.title}</h1>*/}
+                    {/*        /!*<p>{seriesToUse && seriesToUse.description}</p>*!/*/}
+                    {/*    </div>*/}
+                    {/*</section>*/}
 
                     <section id={styles.sectionPin}>
                     <div className={styles.pinWrapSticky}>
-                            <div className={styles.pinWrap}>
-                                {seriesToUse
-                                    && seriesToUse.images
-                                        .map((imageObj, i) => {
-                                    // <FullScreenImage image={imageObj} />
-                                            return (<span key={i} ><FullScreenImage image={imageObj} /></span>)
-                                })}
+                        <div className={styles.pinWrap}>
+                            <div className={styles.seriesDescription}>
+                                <h1>{seriesToUse && seriesToUse.title}</h1>
+                                <h2>{seriesToUse && seriesToUse.year}</h2>
                             </div>
+                            {seriesToUse
+                                && seriesToUse.images
+                                    .map((imageObj, i) => {
+                                        // <FullScreenImage image={imageObj} />
+                                        return (<span key={i}><FullScreenImage image={imageObj}/></span>)
+                                    })}
                         </div>
+                    </div>
                     </section>
                 </div>
 

@@ -18,6 +18,7 @@ export interface SeriesObj{
     url: string;
     description: string;
     images: PaintingObj[];
+    year: number;
 }
 
 export type PaintingObj={
@@ -38,6 +39,7 @@ export const burrowingsSeries: SeriesObj={
     title: "Burrowings in All the Directions of Chance, Possibility, Luck, or Destiny",
     description: "",
     url: "BurrowingInAlltheDirections",
+    year: 2025,
     images: [{
                 title: "Melancholia",
                 size: "8.5 x 12”",

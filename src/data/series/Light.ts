@@ -18,6 +18,7 @@ export const lightSeries:SeriesObj = {
     title: "The Light of the Body is the Eye",
     description: "",
     url: "TheLightoftheBodyistheEye",
+    year: 2022,
     images: [
         {
             title: "Eye of Polyphemus",

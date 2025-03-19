@@ -16,6 +16,7 @@ export const gardenSeries: SeriesObj = {
     title: "The Garden of Forking Paths",
     description: "",
     url: "TheGardenOfForkingPaths",
+    year: 2025,
     images: [
         {
             title: "Thanatography",

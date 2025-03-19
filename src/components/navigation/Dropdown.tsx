@@ -60,7 +60,7 @@ export default function Dropdown(props: DropdownProps) {
                                       onClick={toggle}
                                       key={i}
                                 >
-                                    {item.title}
+                                    {item.year} - {item.title}
                                 </Link>
                             )
                         }

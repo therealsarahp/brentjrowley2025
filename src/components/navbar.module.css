@@ -81,7 +81,7 @@
 
 .navWrapper li .linkActive{
     color: var(--color-gray-200);
-    transform: scale(1.2);
+    /*transform: scale(1.2);*/
     text-decoration: underline;
 }
 

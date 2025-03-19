@@ -39,6 +39,7 @@ export const FullScreenImage: FC<FullScreenImageProps> = ({ image })=>{
                 <div className={[styles.scrollImagesOverlay, `${isOverlay ? 'active' : null}`].join(" ")}>
                     <h3 className={styles.title}>{image.title}</h3>
                     <h3 className={styles.description}>{image?.size}</h3>
+                    <h3>{image?.media}</h3>
                 </div>}
             <Image src={image.img}
                    onClick={toggleOverlay}

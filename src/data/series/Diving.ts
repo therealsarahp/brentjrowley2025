@@ -15,6 +15,7 @@ export const divingSeries : SeriesObj={
     title: 'Diving Into The Wreck',
     description: "",
     url: "DivingIntoTheWreck",
+    year: 2024,
     images: [
         {
             title: "Whither Are They Vanish’d?",

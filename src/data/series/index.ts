@@ -3,4 +3,4 @@ import {divingSeries} from "@/data/series/Diving";
 import {gardenSeries} from "@/data/series/Garden";
 import {lightSeries} from "@/data/series/Light";
 
-export const series: SeriesObj[] = [burrowingsSeries, divingSeries, gardenSeries, lightSeries]
+export const series: SeriesObj[] = [ gardenSeries,burrowingsSeries, divingSeries, lightSeries]
