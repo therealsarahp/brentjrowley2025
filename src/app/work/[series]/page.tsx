@@ -30,12 +30,10 @@ export default function SeriesPage(){
         <div className={styles.page}>
             <main className={styles.main}>
                 <div className={styles.container}>
-                    {/*<section>*/}
-                    {/*    <div className={styles.seriesDescription}>*/}
-                    {/*        <h1>{seriesToUse && seriesToUse.title}</h1>*/}
-                    {/*        /!*<p>{seriesToUse && seriesToUse.description}</p>*!/*/}
-                    {/*    </div>*/}
-                    {/*</section>*/}
+                    <section className={[styles.bufferSpaceMobile, "hideOnDesktop"].join(" ")}>
+                        <div className={styles.bufferSpaceMobile}>
+                        </div>
+                    </section>
 
                     <section id={styles.sectionPin}>
                     <div className={styles.pinWrapSticky}>

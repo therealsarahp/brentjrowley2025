@@ -57,9 +57,12 @@
         z-index: 4;
         overflow-wrap: break-word;
         hyphens: auto;
-        max-width: 50vw;
         /*display: grid;*/
         /*grid-template-columns: 2fr 2fr;*/
+    }
+
+    .bufferSpaceMobile {
+        min-height: 25vh;
     }
 
     .container .pinWrap{
@@ -130,6 +133,8 @@
         /*min-width: 10vw;*/
         /*display: grid;*/
         /*grid-template-columns: 2fr 2fr;*/
+        max-width: 50vw;
+
     }
 }
 
