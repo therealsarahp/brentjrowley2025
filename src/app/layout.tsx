@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     },
   description: "Art from Arkansas painter Brent J Rowley",
     metadataBase: new URL('https://brentjrowley.com'),
+    openGraph: {
+        title: 'Brent J Rowley',
+        description: 'Art from Arkansas painter Brent J Rowley',
+        images: ['src/public/images/Thanatography.jpg']
+    }
 };
 
 export default function RootLayout({
