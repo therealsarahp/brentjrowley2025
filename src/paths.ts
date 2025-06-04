@@ -5,6 +5,7 @@ export const paths = {
         login: '/auth/login',
         register: '/auth/register',
     },
+    shop: "shop.brentjrowley.com",
     about: "/about",
     contact: "/contact",
     blog: {

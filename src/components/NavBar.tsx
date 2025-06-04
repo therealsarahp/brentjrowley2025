@@ -53,6 +53,12 @@ export default function NavBar() {
                         {/*</Link>*/}
                     </li>
                     <li>
+                        <Link className={`${pathname === paths.shop ? styles.linkActive : null}`}
+                              href={"https://shop.brentjrowley.com/"}>
+                            Shop
+                        </Link>
+                    </li>
+                    <li>
                         <Link className={`${pathname === paths.about ? styles.linkActive : null}`}
                               href={paths.about}>
                             About
